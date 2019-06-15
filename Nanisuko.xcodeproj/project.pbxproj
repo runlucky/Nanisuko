@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,6 +42,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1931A27922B4C23D005E73F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1931A27B22B4C289005E73F2 /* LaunchScreen */,
+				1931A27A22B4C247005E73F2 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1931A27A22B4C247005E73F2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				199CBAE322B4A53C001D9646 /* ViewController.swift */,
+				199CBAE522B4A53D001D9646 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1931A27B22B4C289005E73F2 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				199CBAED22B4A53F001D9646 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		199CBAD522B4A53C001D9646 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +89,9 @@
 		199CBAE022B4A53C001D9646 /* Nanisuko */ = {
 			isa = PBXGroup;
 			children = (
+				1931A27922B4C23D005E73F2 /* Views */,
 				199CBAE122B4A53C001D9646 /* AppDelegate.swift */,
-				199CBAE322B4A53C001D9646 /* ViewController.swift */,
-				199CBAE522B4A53D001D9646 /* Main.storyboard */,
 				199CBAEB22B4A53F001D9646 /* Assets.xcassets */,
-				199CBAED22B4A53F001D9646 /* LaunchScreen.storyboard */,
 				199CBAF022B4A53F001D9646 /* Info.plist */,
 				199CBAE822B4A53D001D9646 /* Nanisuko.xcdatamodeld */,
 			);
@@ -80,7 +104,6 @@
 				AD40CCC60BB962FDDAF12375 /* Pods-Nanisuko.debug.xcconfig */,
 				92539335C7A7EC19DD359AA7 /* Pods-Nanisuko.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
