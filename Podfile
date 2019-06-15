@@ -7,5 +7,6 @@ target 'Nanisuko' do
 
   # Pods for Nanisuko
   pod 'Material'
+  pod 'SwiftDate'
 
 end

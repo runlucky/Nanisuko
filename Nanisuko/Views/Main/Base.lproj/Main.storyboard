@@ -42,6 +42,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="送信"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchDown" id="kiB-Zy-80d"/>
+                                </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K4s-Ha-fpF">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
@@ -69,6 +72,9 @@
                     <navigationItem key="navigationItem" title="Title" id="tvw-id-RJF">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="ZKq-7D-EvW"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="text" destination="Z3y-At-Vs4" id="FDs-tz-tEK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -6,19 +6,23 @@ PODS:
   - Motion (3.1.1):
     - Motion/Core (= 3.1.1)
   - Motion/Core (3.1.1)
+  - SwiftDate (6.0.3)
 
 DEPENDENCIES:
   - Material
+  - SwiftDate
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Material
     - Motion
+    - SwiftDate
 
 SPEC CHECKSUMS:
   Material: 3622a0e18c8114e701b9d8509c3c4af28ed69ed8
   Motion: f115b33f36cc52472a25a965daa89b3859817de0
+  SwiftDate: 8d4f14bf1ef68e95094511504856547bf9e3e1a6
 
-PODFILE CHECKSUM: e228d7aabba299ef39a72eda91a31ed984e1bb6f
+PODFILE CHECKSUM: e17bd421d3d63ecaf47ad5aade42e6bb87eb306c
 
 COCOAPODS: 1.7.1
