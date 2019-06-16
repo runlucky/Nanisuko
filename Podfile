@@ -8,6 +8,5 @@ target 'Nanisuko' do
   # Pods for Nanisuko
   pod 'Material'
   pod 'SwiftDate'
-  pod 'STRegex'
 
 end
