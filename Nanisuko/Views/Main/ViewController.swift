@@ -31,13 +31,9 @@ class ViewController: UIViewController {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         
-        let formatter = ISO8601DateFormatter()
-        let d = formatter.string(from: Date())
-
-        
-        let params: [String: Any] = [
-            "timestamp": d,
-            "time" : d,
+        let params: [String: Any?] = [
+            "timestamp": Date().toString(.ISO8601),
+            "time" : text.text?.toDate()?.toString(.ISO8601) ?? nil,
             "data" : text.text ?? ""
         ]
 

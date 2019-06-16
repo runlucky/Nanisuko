@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1931A27E22B4E0EB005E73F2 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1931A27D22B4E0EB005E73F2 /* UIViewControllerExtensions.swift */; };
 		1931A28022B4E14F005E73F2 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1931A27F22B4E14F005E73F2 /* UILabelExtensions.swift */; };
+		1931A28222B63F1E005E73F2 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1931A28122B63F1E005E73F2 /* StringExtensions.swift */; };
+		1931A28422B6980D005E73F2 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1931A28322B6980D005E73F2 /* DateExtensions.swift */; };
 		199CBAE222B4A53C001D9646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199CBAE122B4A53C001D9646 /* AppDelegate.swift */; };
 		199CBAE422B4A53C001D9646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199CBAE322B4A53C001D9646 /* ViewController.swift */; };
 		199CBAE722B4A53D001D9646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199CBAE522B4A53D001D9646 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 		040033A8CF5E088D927EE84A /* Pods_Nanisuko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nanisuko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1931A27D22B4E0EB005E73F2 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		1931A27F22B4E14F005E73F2 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		1931A28122B63F1E005E73F2 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		1931A28322B6980D005E73F2 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		199CBADE22B4A53C001D9646 /* Nanisuko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nanisuko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		199CBAE122B4A53C001D9646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		199CBAE322B4A53C001D9646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 			children = (
 				1931A27D22B4E0EB005E73F2 /* UIViewControllerExtensions.swift */,
 				1931A27F22B4E14F005E73F2 /* UILabelExtensions.swift */,
+				1931A28122B63F1E005E73F2 /* StringExtensions.swift */,
+				1931A28322B6980D005E73F2 /* DateExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -244,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1931A28422B6980D005E73F2 /* DateExtensions.swift in Sources */,
+				1931A28222B63F1E005E73F2 /* StringExtensions.swift in Sources */,
 				1931A27E22B4E0EB005E73F2 /* UIViewControllerExtensions.swift in Sources */,
 				199CBAE422B4A53C001D9646 /* ViewController.swift in Sources */,
 				1931A28022B4E14F005E73F2 /* UILabelExtensions.swift in Sources */,
