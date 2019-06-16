@@ -8,15 +8,37 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+
+
+
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.badge, .sound, .alert], completionHandler: { (granted, error) in
+            if error != nil {
+                return
+            }
+
+            if granted {
+                print("通知許可")
+
+                let center = UNUserNotificationCenter.current()
+                center.delegate = self
+
+            } else {
+                print("通知拒否")
+            }
+        })
+
         return true
     }
 
@@ -27,7 +49,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.\
+
+        //　通知設定に必要なクラスをインスタンス化
+    
+        let trigger: UNNotificationTrigger
+        let content = UNMutableNotificationContent()
+        var notificationTime = DateComponents()
+        
+        // トリガー設定
+        notificationTime.hour = 18
+        notificationTime.minute = 0
+
+        // trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        trigger = UNCalendarNotificationTrigger(dateMatching: notificationTime, repeats: true)
+        
+        // 通知内容の設定
+        content.title = ""
+        content.body = "今日はなにすこ？"
+        content.sound = UNNotificationSound.default
+        
+        // 通知スタイルを指定
+        let request = UNNotificationRequest(identifier: "uuid", content: content, trigger: trigger)
+        // 通知をセット
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
