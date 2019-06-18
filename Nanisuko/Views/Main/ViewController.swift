@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBAction func submit(_ sender: RaisedButton) {
         self.view.endEditing(true)
 
-        sender.title = "送信中です..."
+        sender.title = "sending..."
         sender.isEnabled = false
 
         let urlString = "https://script.google.com/macros/s/AKfycbxn19k9qbp1D1ZyPGUsZWfAv6ryKR7b7xDXphh6-JcfVClmmH4F/exec"
@@ -45,9 +45,9 @@ class ViewController: UIViewController {
                 print("result:\(resultData)")
                 print("response:\(response)")
                 DispatchQueue.main.async {
-                    self.showToast("送信しました")
+                    self.showToast("sent.")
                     sender.isEnabled = true
-                    sender.title = "送信"
+                    sender.title = "sent!"
                     self.text.text = ""
                     
                 }
