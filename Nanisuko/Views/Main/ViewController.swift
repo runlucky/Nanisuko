@@ -48,6 +48,7 @@ class ViewController: UIViewController {
                     self.showToast("送信しました")
                     sender.isEnabled = true
                     sender.title = "送信"
+                    self.text.text = ""
                     
                 }
   
