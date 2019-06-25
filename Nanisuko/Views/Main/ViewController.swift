@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 import Material
+import Hydra
 
 class ViewController: UIViewController {
-
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    @IBOutlet weak var expireLabel: UILabel!
 
+    @IBOutlet weak var expire: UILabel!
     @IBOutlet weak var text: TextField!
 
     @IBAction func submit(_ sender: RaisedButton) {
@@ -25,47 +25,32 @@ class ViewController: UIViewController {
         sender.title = "sending..."
         sender.isEnabled = false
 
-        let urlString = "https://script.google.com/macros/s/AKfycbxn19k9qbp1D1ZyPGUsZWfAv6ryKR7b7xDXphh6-JcfVClmmH4F/exec"
-        let request = NSMutableURLRequest(url: URL(string: urlString)!)
-
-        request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        
         let params: [String: Any?] = [
             "timestamp": Date().toString(.ISO8601),
             "time" : text.text?.toDate()?.toString(.ISO8601) ?? nil,
             "data" : text.text ?? ""
         ]
 
-        do {
-            request.httpBody = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
+        async { _ -> Void in
+            _ = try await(Requester.shared.request(params: params))
 
-            let task = URLSession.shared.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-                let resultData = String(data: data!, encoding: .utf8)!
-                print("result:\(resultData)")
-                print("response:\(response)")
-                DispatchQueue.main.async {
-                    self.showToast("sent.")
-                    sender.isEnabled = true
-                    sender.title = "sent!"
-                    self.text.text = ""
-                    
-                }
-  
+            DispatchQueue.main.async {
+                self.text.text = ""
+                sender.isEnabled = true
+                sender.title = "sent!"
+            }
 
-            })
-            task.resume()
-        } catch {
-            print("Error:\(error)")
-            return
+            return ()
+        }.catch {_ in
+            sender.title = "send"
+            sender.isEnabled = true
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        expireLabel.text = "expire: " + (Bundle.main.ExpirationDate?.toString(.shortDate) ?? "")
+        expire.text = "expire: " + (Bundle.main.ExpirationDate?.toString(.shortDate) ?? "")
         // Do any additional setup after loading the view.
     }
 }
