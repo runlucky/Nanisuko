@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08BFBD0022C1B510003C7F44 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BFBCFF22C1B510003C7F44 /* BundleExtensions.swift */; };
 		1931A27E22B4E0EB005E73F2 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1931A27D22B4E0EB005E73F2 /* UIViewControllerExtensions.swift */; };
 		1931A28022B4E14F005E73F2 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1931A27F22B4E14F005E73F2 /* UILabelExtensions.swift */; };
 		1931A28222B63F1E005E73F2 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1931A28122B63F1E005E73F2 /* StringExtensions.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		040033A8CF5E088D927EE84A /* Pods_Nanisuko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nanisuko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BFBCFF22C1B510003C7F44 /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 		1931A27D22B4E0EB005E73F2 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		1931A27F22B4E14F005E73F2 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		1931A28122B63F1E005E73F2 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				1931A27F22B4E14F005E73F2 /* UILabelExtensions.swift */,
 				1931A28122B63F1E005E73F2 /* StringExtensions.swift */,
 				1931A28322B6980D005E73F2 /* DateExtensions.swift */,
+				08BFBCFF22C1B510003C7F44 /* BundleExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				1931A28222B63F1E005E73F2 /* StringExtensions.swift in Sources */,
 				1931A27E22B4E0EB005E73F2 /* UIViewControllerExtensions.swift in Sources */,
 				199CBAE422B4A53C001D9646 /* ViewController.swift in Sources */,
+				08BFBD0022C1B510003C7F44 /* BundleExtensions.swift in Sources */,
 				1931A28022B4E14F005E73F2 /* UILabelExtensions.swift in Sources */,
 				199CBAE222B4A53C001D9646 /* AppDelegate.swift in Sources */,
 				199CBAEA22B4A53D001D9646 /* Nanisuko.xcdatamodeld in Sources */,

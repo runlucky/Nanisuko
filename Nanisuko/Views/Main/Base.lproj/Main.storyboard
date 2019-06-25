@@ -46,14 +46,6 @@
                                     <action selector="submit:" destination="BYZ-38-t0r" eventType="touchDown" id="kiB-Zy-80d"/>
                                 </connections>
                             </button>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K4s-Ha-fpF">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="k5x-ld-mW0"/>
-                                    <barButtonItem title="Item" image="cm_settings_white" id="lEV-9w-Gub"/>
-                                </items>
-                            </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z3y-At-Vs4" customClass="TextField" customModule="Material">
                                 <rect key="frame" x="75" y="253" width="224" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -65,6 +57,13 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isClearIconButtonEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duE-LA-qYS">
+                                <rect key="frame" x="83" y="429" width="208" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -73,6 +72,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="ZKq-7D-EvW"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="expireLabel" destination="duE-LA-qYS" id="reb-Rf-eFD"/>
                         <outlet property="text" destination="Z3y-At-Vs4" id="FDs-tz-tEK"/>
                     </connections>
                 </viewController>
@@ -81,7 +81,4 @@
             <point key="canvasLocation" x="524" y="480.80959520239884"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="cm_settings_white" width="24" height="24"/>
-    </resources>
 </document>
