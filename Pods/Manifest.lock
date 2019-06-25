@@ -1,28 +1,28 @@
 PODS:
-  - Material (3.1.4):
-    - Material/Core (= 3.1.4)
-  - Material/Core (3.1.4):
-    - Motion (~> 3.1.0)
+  - HydraAsync (2.0.0)
+  - Material (3.1.5):
+    - Material/Core (= 3.1.5)
+  - Material/Core (3.1.5):
+    - Motion (~> 3.1.1)
   - Motion (3.1.1):
     - Motion/Core (= 3.1.1)
   - Motion/Core (3.1.1)
-  - SwiftDate (6.0.3)
 
 DEPENDENCIES:
+  - HydraAsync
   - Material
-  - SwiftDate
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - HydraAsync
     - Material
     - Motion
-    - SwiftDate
 
 SPEC CHECKSUMS:
-  Material: 3622a0e18c8114e701b9d8509c3c4af28ed69ed8
+  HydraAsync: bdb2fc2342dd7b74b5cd5fc919ef39d4e41fa46f
+  Material: 7b68f7d8e7e83b9d57ab2d6d44232def763906f7
   Motion: f115b33f36cc52472a25a965daa89b3859817de0
-  SwiftDate: 8d4f14bf1ef68e95094511504856547bf9e3e1a6
 
-PODFILE CHECKSUM: 952412ffd90a1a977c77dc3e6e5f7e4c2d997b09
+PODFILE CHECKSUM: c6b6da504e42b927f0ccbc7503f4eee3a89fe8fc
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.7.2

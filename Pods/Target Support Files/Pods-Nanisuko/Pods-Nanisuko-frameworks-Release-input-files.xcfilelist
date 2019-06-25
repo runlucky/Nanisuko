@@ -1,4 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Nanisuko/Pods-Nanisuko-frameworks.sh
+${BUILT_PRODUCTS_DIR}/HydraAsync/Hydra.framework
 ${BUILT_PRODUCTS_DIR}/Material/Material.framework
 ${BUILT_PRODUCTS_DIR}/Motion/Motion.framework
-${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework
