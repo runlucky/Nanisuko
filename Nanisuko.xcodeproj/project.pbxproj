@@ -19,6 +19,7 @@
 		199CBAEA22B4A53D001D9646 /* Nanisuko.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 199CBAE822B4A53D001D9646 /* Nanisuko.xcdatamodeld */; };
 		199CBAEC22B4A53F001D9646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 199CBAEB22B4A53F001D9646 /* Assets.xcassets */; };
 		199CBAEF22B4A53F001D9646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199CBAED22B4A53F001D9646 /* LaunchScreen.storyboard */; };
+		19C33F7F22C2494F00DEF26E /* UNNotificationRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C33F7E22C2494F00DEF26E /* UNNotificationRequestExtensions.swift */; };
 		714E10095E88347FA7223F55 /* Pods_Nanisuko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040033A8CF5E088D927EE84A /* Pods_Nanisuko.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		199CBAEB22B4A53F001D9646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		199CBAEE22B4A53F001D9646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		199CBAF022B4A53F001D9646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C33F7E22C2494F00DEF26E /* UNNotificationRequestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNNotificationRequestExtensions.swift; sourceTree = "<group>"; };
 		92539335C7A7EC19DD359AA7 /* Pods-Nanisuko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanisuko.release.xcconfig"; path = "Target Support Files/Pods-Nanisuko/Pods-Nanisuko.release.xcconfig"; sourceTree = "<group>"; };
 		AD40CCC60BB962FDDAF12375 /* Pods-Nanisuko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanisuko.debug.xcconfig"; path = "Target Support Files/Pods-Nanisuko/Pods-Nanisuko.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 				1931A28122B63F1E005E73F2 /* StringExtensions.swift */,
 				1931A28322B6980D005E73F2 /* DateExtensions.swift */,
 				08BFBCFF22C1B510003C7F44 /* BundleExtensions.swift */,
+				19C33F7E22C2494F00DEF26E /* UNNotificationRequestExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1931A28422B6980D005E73F2 /* DateExtensions.swift in Sources */,
+				19C33F7F22C2494F00DEF26E /* UNNotificationRequestExtensions.swift in Sources */,
 				1931A28222B63F1E005E73F2 /* StringExtensions.swift in Sources */,
 				08BFBD0222C1BFD6003C7F44 /* Requester.swift in Sources */,
 				1931A27E22B4E0EB005E73F2 /* UIViewControllerExtensions.swift in Sources */,

@@ -25,13 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             }
 
             if granted {
-                print("通知許可")
-
                 let center = UNUserNotificationCenter.current()
                 center.delegate = self
 
-            } else {
-                print("通知拒否")
             }
         }
 
@@ -47,32 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.\
 
-        //　通知設定に必要なクラスをインスタンス化
-    
-        let trigger: UNNotificationTrigger
-        let content = UNMutableNotificationContent()
-        var notificationTime = DateComponents()
-        
-        // トリガー設定
-        notificationTime.hour = 18
-        notificationTime.minute = 0
-
-        // trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
-        trigger = UNCalendarNotificationTrigger(dateMatching: notificationTime, repeats: true)
-        
-        // 通知内容の設定
-        content.title = ""
-        content.body = "今日はなにすこ？"
-        content.sound = UNNotificationSound.default
-        content.badge = 1
-        
-        // 通知スタイルを指定
-        let request = UNNotificationRequest(identifier: "uuid", content: content, trigger: trigger)
-        // 通知をセット
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-        
+        UNUserNotificationCenter.current().add(UNNotificationRequest.createNanisuko(), withCompletionHandler: nil)
     }
-
+    
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         UIApplication.shared.applicationIconBadgeNumber = 0
