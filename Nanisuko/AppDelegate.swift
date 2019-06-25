@@ -64,6 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         content.title = ""
         content.body = "今日はなにすこ？"
         content.sound = UNNotificationSound.default
+        content.badge = 1
         
         // 通知スタイルを指定
         let request = UNNotificationRequest(identifier: "uuid", content: content, trigger: trigger)
@@ -74,6 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
