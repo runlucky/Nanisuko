@@ -22,11 +22,11 @@ extension String {
     }
 
     private func convertNumber() -> String {
-        var text = self.replace("ななじ|しちじ", to: "19:")
-        text = text.replace("はちじ", to: "20:")
-        text = text.replace("くじ", to: "21:")
-        text = text.replace("じゅうじ", to: "22:")
-        text = text.replace("じゅういちじ", to: "23:")
+        var text = self.replace("ななじ|しちじ", to: "7:")
+        text = text.replace("はちじ", to: "8:")
+        text = text.replace("くじ", to: "9:")
+        text = text.replace("じゅうじ", to: "10:")
+        text = text.replace("じゅういちじ", to: "11:")
 
         text = text.replace("(１|一|いち|イチ)", to: "1")
         text = text.replace("(２|ニ|に|ニ)", to: "2")
@@ -79,7 +79,11 @@ extension String {
               let result = Int(reg) else {
             return nil
         }
-        return result
+
+        switch result {
+        case 6...12 : return result + 12
+        default : return result
+        }
     }
 
     private func getMinute() -> Int? {
