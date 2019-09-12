@@ -62,7 +62,7 @@ extension String {
         return (self as NSString).substring(with: matched.range(at: 1))
     }
 
-    private func toTime() -> ( hour: Int?, minute: Int?)? {
+    private func toTime() -> (hour: Int?, minute: Int?)? {
         let time = (hour: self.getHour(), minute: self.getMinute())
         if time.hour != nil {
             return time
@@ -81,8 +81,8 @@ extension String {
         }
 
         switch result {
-        case 6...12 : return result + 12
-        default : return result
+        case 6...12: return result + 12
+        default: return result
         }
     }
 
@@ -92,5 +92,15 @@ extension String {
             return nil
         }
         return result
+    }
+}
+
+extension Optional where Wrapped == String {
+    public var isNilOrEmpty: Bool {
+        switch self {
+        case nil: return true
+        case "": return true
+        default: return false
+        }
     }
 }

@@ -17,9 +17,10 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var expire: UILabel!
-    @IBOutlet weak var text: TextField!
+    @IBOutlet weak var textField: TextField!
 
     @IBAction func submit(_ sender: RaisedButton) {
+        if textField.text.isNilOrEmpty { return }
         self.view.endEditing(true)
 
         sender.title = "sending..."
@@ -27,15 +28,15 @@ class ViewController: UIViewController {
 
         let params: [String: Any?] = [
             "timestamp": Date().toString(.ISO8601),
-            "time" : text.text?.toDate()?.toString(.ISO8601) ?? nil,
-            "data" : text.text ?? ""
+            "time" : textField.text?.toDate()?.toString(.ISO8601) ?? nil,
+            "data" : textField.text ?? ""
         ]
 
         async { _ -> Void in
             _ = try await(Requester.shared.request(params: params))
 
             DispatchQueue.main.async {
-                self.text.text = ""
+                self.textField.text = ""
                 sender.isEnabled = true
                 sender.title = "sent!"
             }

@@ -73,7 +73,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="expire" destination="duE-LA-qYS" id="reb-Rf-eFD"/>
-                        <outlet property="text" destination="Z3y-At-Vs4" id="FDs-tz-tEK"/>
+                        <outlet property="textField" destination="Z3y-At-Vs4" id="FDs-tz-tEK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
