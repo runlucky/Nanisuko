@@ -41,6 +41,8 @@ extension String {
 
         text = text.replace("(：|じ|時)", to: ":")
         text = text.replace("(はん|半)", to: "30")
+        
+        text = text.replace("[^0-9:]", to: "")
 
         return text;
     }
