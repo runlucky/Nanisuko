@@ -77,7 +77,7 @@ extension String {
     }
 
     private func getHour() -> Int? {
-        guard let reg = self.match("(\\d{1,2}):"),
+        guard let reg = self.match("(^\\d{1,2})"),
               let result = Int(reg) else {
             return nil
         }
