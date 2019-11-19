@@ -19,9 +19,21 @@
 		199CBAEA22B4A53D001D9646 /* Nanisuko.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 199CBAE822B4A53D001D9646 /* Nanisuko.xcdatamodeld */; };
 		199CBAEC22B4A53F001D9646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 199CBAEB22B4A53F001D9646 /* Assets.xcassets */; };
 		199CBAEF22B4A53F001D9646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199CBAED22B4A53F001D9646 /* LaunchScreen.storyboard */; };
+		19AF139223841CA900FE70A9 /* NanisukoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF139123841CA900FE70A9 /* NanisukoTests.swift */; };
+		19AF139A23841D1800FE70A9 /* SwiftChainingAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF139923841D1800FE70A9 /* SwiftChainingAssertion.swift */; };
 		19C33F7F22C2494F00DEF26E /* UNNotificationRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C33F7E22C2494F00DEF26E /* UNNotificationRequestExtensions.swift */; };
 		714E10095E88347FA7223F55 /* Pods_Nanisuko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040033A8CF5E088D927EE84A /* Pods_Nanisuko.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19AF139423841CA900FE70A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 199CBAD622B4A53C001D9646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 199CBADD22B4A53C001D9646;
+			remoteInfo = Nanisuko;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		040033A8CF5E088D927EE84A /* Pods_Nanisuko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nanisuko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +51,10 @@
 		199CBAEB22B4A53F001D9646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		199CBAEE22B4A53F001D9646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		199CBAF022B4A53F001D9646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19AF138F23841CA900FE70A9 /* NanisukoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanisukoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19AF139123841CA900FE70A9 /* NanisukoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanisukoTests.swift; sourceTree = "<group>"; };
+		19AF139323841CA900FE70A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19AF139923841D1800FE70A9 /* SwiftChainingAssertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChainingAssertion.swift; sourceTree = "<group>"; };
 		19C33F7E22C2494F00DEF26E /* UNNotificationRequestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNNotificationRequestExtensions.swift; sourceTree = "<group>"; };
 		92539335C7A7EC19DD359AA7 /* Pods-Nanisuko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanisuko.release.xcconfig"; path = "Target Support Files/Pods-Nanisuko/Pods-Nanisuko.release.xcconfig"; sourceTree = "<group>"; };
 		AD40CCC60BB962FDDAF12375 /* Pods-Nanisuko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanisuko.debug.xcconfig"; path = "Target Support Files/Pods-Nanisuko/Pods-Nanisuko.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +66,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				714E10095E88347FA7223F55 /* Pods_Nanisuko.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19AF138C23841CA900FE70A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				199CBAE022B4A53C001D9646 /* Nanisuko */,
+				19AF139023841CA900FE70A9 /* NanisukoTests */,
 				199CBADF22B4A53C001D9646 /* Products */,
 				B8AE775D6C75F7E3FD01A6CA /* Pods */,
 				D5E71D0A4290D818DCCDD93D /* Frameworks */,
@@ -109,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				199CBADE22B4A53C001D9646 /* Nanisuko.app */,
+				19AF138F23841CA900FE70A9 /* NanisukoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +150,16 @@
 				08BFBD0122C1BFD6003C7F44 /* Requester.swift */,
 			);
 			path = Nanisuko;
+			sourceTree = "<group>";
+		};
+		19AF139023841CA900FE70A9 /* NanisukoTests */ = {
+			isa = PBXGroup;
+			children = (
+				19AF139123841CA900FE70A9 /* NanisukoTests.swift */,
+				19AF139323841CA900FE70A9 /* Info.plist */,
+				19AF139923841D1800FE70A9 /* SwiftChainingAssertion.swift */,
+			);
+			path = NanisukoTests;
 			sourceTree = "<group>";
 		};
 		B8AE775D6C75F7E3FD01A6CA /* Pods */ = {
@@ -166,18 +201,40 @@
 			productReference = 199CBADE22B4A53C001D9646 /* Nanisuko.app */;
 			productType = "com.apple.product-type.application";
 		};
+		19AF138E23841CA900FE70A9 /* NanisukoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19AF139823841CA900FE70A9 /* Build configuration list for PBXNativeTarget "NanisukoTests" */;
+			buildPhases = (
+				19AF138B23841CA900FE70A9 /* Sources */,
+				19AF138C23841CA900FE70A9 /* Frameworks */,
+				19AF138D23841CA900FE70A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19AF139523841CA900FE70A9 /* PBXTargetDependency */,
+			);
+			name = NanisukoTests;
+			productName = NanisukoTests;
+			productReference = 19AF138F23841CA900FE70A9 /* NanisukoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		199CBAD622B4A53C001D9646 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "福田走";
 				TargetAttributes = {
 					199CBADD22B4A53C001D9646 = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					19AF138E23841CA900FE70A9 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 199CBADD22B4A53C001D9646;
 					};
 				};
 			};
@@ -195,6 +252,7 @@
 			projectRoot = "";
 			targets = (
 				199CBADD22B4A53C001D9646 /* Nanisuko */,
+				19AF138E23841CA900FE70A9 /* NanisukoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +265,13 @@
 				199CBAEF22B4A53F001D9646 /* LaunchScreen.storyboard in Resources */,
 				199CBAEC22B4A53F001D9646 /* Assets.xcassets in Resources */,
 				199CBAE722B4A53D001D9646 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19AF138D23841CA900FE70A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +337,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19AF138B23841CA900FE70A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19AF139223841CA900FE70A9 /* NanisukoTests.swift in Sources */,
+				19AF139A23841D1800FE70A9 /* SwiftChainingAssertion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19AF139523841CA900FE70A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 199CBADD22B4A53C001D9646 /* Nanisuko */;
+			targetProxy = 19AF139423841CA900FE70A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		199CBAE522B4A53D001D9646 /* Main.storyboard */ = {
@@ -448,6 +530,48 @@
 			};
 			name = Release;
 		};
+		19AF139623841CA900FE70A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89944GJ9HX;
+				INFOPLIST_FILE = NanisukoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kakeru.NanisukoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nanisuko.app/Nanisuko";
+			};
+			name = Debug;
+		};
+		19AF139723841CA900FE70A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89944GJ9HX;
+				INFOPLIST_FILE = NanisukoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kakeru.NanisukoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nanisuko.app/Nanisuko";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -465,6 +589,15 @@
 			buildConfigurations = (
 				199CBAF422B4A53F001D9646 /* Debug */,
 				199CBAF522B4A53F001D9646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19AF139823841CA900FE70A9 /* Build configuration list for PBXNativeTarget "NanisukoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19AF139623841CA900FE70A9 /* Debug */,
+				19AF139723841CA900FE70A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
