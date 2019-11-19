@@ -42,8 +42,6 @@ extension String {
         text = text.replace("(：|じ|時)", to: ":")
         text = text.replace("(はん|半)", to: "30")
         
-        text = text.replace("[^0-9:]", to: "")
-
         return text;
     }
 
@@ -69,10 +67,12 @@ extension String {
         if time.hour != nil {
             return time
         }
-
+        
         if self.starts(with: "はやすこ") { return (hour: 19, minute: 30) }
         if self.starts(with: "おそすこ") { return (hour: 21, minute: 0) }
         if self.starts(with: "おおおそすこ") { return (hour: 23, minute: 0) }
+        if self.starts(with: "定") { return (hour: 19, minute: 0) }
+
         return nil
     }
 
