@@ -4,7 +4,7 @@ on: [push]
 jobs:
   test:
     name: Test
-    runs-on: macOS-latest
+    runs-on: macos-latest
     strategy:
         matrix:
           destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 11']
@@ -17,3 +17,4 @@ jobs:
           bash <(curl -s https://codecov.io/bash)
         env: 
          destination: ${{ matrix.destination }}
+
